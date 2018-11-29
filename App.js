@@ -12,14 +12,14 @@ import JitsiMeetJS from './lib-jitsi-meet-swagger';
 import { RTCView } from 'react-native-webrtc';
 const window = Dimensions.get('window');
 const options = {
-  hosts: {
-      domain: 'meet.roy2651.cn',
-      muc: 'conference.meet.roy2651.cn' // FIXME: use XEP-0030
-  },
-  bosh: 'https://meet.roy2651.cn/http-bind', // FIXME: use xep-0156 for that
+    hosts: {
+        domain: 'jitsi-meet.example.com',
+        muc: 'conference.jitsi-meet.example.com' // FIXME: use XEP-0030
+    },
+    bosh: '//jitsi-meet.example.com/http-bind', // FIXME: use xep-0156 for that
 
-  // The name of client node advertised in XEP-0115 'c' stanza
-  clientNode: 'http://jitsi.org/jitsimeet'
+    // The name of client node advertised in XEP-0115 'c' stanza
+    clientNode: 'http://jitsi.org/jitsimeet'
 };
 const initOptions = {
   disableAudioLevels: true
