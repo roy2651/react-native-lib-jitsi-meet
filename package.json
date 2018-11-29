@@ -1,0 +1,30 @@
+{
+  "name": "sharejitsi",
+  "version": "1.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "es6-iterator": "^2.0.3",
+    "jitsi-meet-logger": "github:jitsi/jitsi-meet-logger#6fff754a77a56ab52499f3559105a15886942a1e",
+    "jquery": "3.3.1",
+    "react": "16.6.1",
+    "react-native": "0.57.5",
+    "react-native-background-timer": "^2.1.1",
+    "react-native-callstats": "^3.56.0",
+    "react-native-webrtc": "github:jitsi/react-native-webrtc#6322a9b5a38ce590cfaea4041072ea87c8dbf558",
+    "url-polyfill": "^1.1.1",
+    "xmldom": "^0.1.27"
+  },
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.49.2",
+    "react-test-renderer": "16.6.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
