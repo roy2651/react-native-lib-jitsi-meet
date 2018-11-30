@@ -121,7 +121,13 @@ function _visitNode(node, callback) {
         // eslint-disable-next-line no-empty-function
         global.removeEventListener = () => {};
     }
+    const arrayPrototype = Array.prototype;
 
+    if (typeof arrayPrototype['@@iterator'] === 'undefined') {
+        arrayPrototype['@@iterator'] = function() {
+            return new Iterator(this);
+        };
+    }
     // document
     //
     // Required by:
